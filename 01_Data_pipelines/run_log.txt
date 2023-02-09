@@ -1,0 +1,659 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+23/02/09 18:03:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/02/09 18:03:31 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/02/09 18:03:31 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/02/09 18:03:31 INFO SharedState: Warehouse path is 'file:/Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/spark-warehouse'.
+23/02/09 18:03:32 INFO InMemoryFileIndex: It took 29 ms to list leaf files for 1 paths.
+23/02/09 18:03:32 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 2 paths.
+23/02/09 18:03:34 INFO FileSourceStrategy: Pushed Filters: 
+23/02/09 18:03:34 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+23/02/09 18:03:34 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/02/09 18:03:34 INFO CodeGenerator: Code generated in 132.06732 ms
+23/02/09 18:03:34 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 200.1 KiB, free 434.2 MiB)
+23/02/09 18:03:34 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 434.2 MiB)
+23/02/09 18:03:34 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on trans-mbp-3:54189 (size: 34.4 KiB, free: 434.4 MiB)
+23/02/09 18:03:34 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:34 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/02/09 18:03:34 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:34 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/02/09 18:03:34 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+23/02/09 18:03:34 INFO DAGScheduler: Parents of final stage: List()
+23/02/09 18:03:34 INFO DAGScheduler: Missing parents: List()
+23/02/09 18:03:34 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/02/09 18:03:34 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 11.8 KiB, free 434.2 MiB)
+23/02/09 18:03:34 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 434.2 MiB)
+23/02/09 18:03:34 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on trans-mbp-3:54189 (size: 5.9 KiB, free: 434.4 MiB)
+23/02/09 18:03:34 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+23/02/09 18:03:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/02/09 18:03:34 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/02/09 18:03:34 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (trans-mbp-3, executor driver, partition 0, PROCESS_LOCAL, 5037 bytes) taskResourceAssignments Map()
+23/02/09 18:03:34 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/02/09 18:03:34 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_2.csv, range: 0-181523, partition values: [empty row]
+23/02/09 18:03:34 INFO CodeGenerator: Code generated in 8.063085 ms
+23/02/09 18:03:34 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1558 bytes result sent to driver
+23/02/09 18:03:34 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 146 ms on trans-mbp-3 (executor driver) (1/1)
+23/02/09 18:03:34 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/02/09 18:03:34 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) finished in 0.245 s
+23/02/09 18:03:34 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/02/09 18:03:34 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/02/09 18:03:34 INFO DAGScheduler: Job 0 finished: csv at NativeMethodAccessorImpl.java:0, took 0.277943 s
+23/02/09 18:03:34 INFO CodeGenerator: Code generated in 9.004706 ms
+23/02/09 18:03:35 INFO FileSourceStrategy: Pushed Filters: 
+23/02/09 18:03:35 INFO FileSourceStrategy: Post-Scan Filters: 
+23/02/09 18:03:35 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/02/09 18:03:35 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 200.1 KiB, free 434.0 MiB)
+23/02/09 18:03:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on trans-mbp-3:54189 in memory (size: 5.9 KiB, free: 434.4 MiB)
+23/02/09 18:03:35 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 433.9 MiB)
+23/02/09 18:03:35 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on trans-mbp-3:54189 (size: 34.4 KiB, free: 434.3 MiB)
+23/02/09 18:03:35 INFO SparkContext: Created broadcast 2 from csv at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/02/09 18:03:35 INFO FileSourceStrategy: Pushed Filters: 
+23/02/09 18:03:35 INFO FileSourceStrategy: Post-Scan Filters: 
+23/02/09 18:03:35 INFO FileSourceStrategy: Output Data Schema: struct<name: string, email: string, date_of_birth: string, mobile_no: string ... 2 more fields>
+23/02/09 18:03:35 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 200.0 KiB, free 433.7 MiB)
+23/02/09 18:03:35 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 433.7 MiB)
+23/02/09 18:03:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on trans-mbp-3:54189 (size: 34.3 KiB, free: 434.3 MiB)
+23/02/09 18:03:35 INFO SparkContext: Created broadcast 3 from head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84
+23/02/09 18:03:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/02/09 18:03:35 INFO SparkContext: Starting job: head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84
+23/02/09 18:03:35 INFO DAGScheduler: Got job 1 (head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84) with 1 output partitions
+23/02/09 18:03:35 INFO DAGScheduler: Final stage: ResultStage 1 (head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84)
+23/02/09 18:03:35 INFO DAGScheduler: Parents of final stage: List()
+23/02/09 18:03:35 INFO DAGScheduler: Missing parents: List()
+23/02/09 18:03:35 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[12] at head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84), which has no missing parents
+23/02/09 18:03:35 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 10.6 KiB, free 433.7 MiB)
+23/02/09 18:03:35 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.8 KiB, free 433.7 MiB)
+23/02/09 18:03:35 INFO BlockManagerInfo: Removed broadcast_2_piece0 on trans-mbp-3:54189 in memory (size: 34.4 KiB, free: 434.3 MiB)
+23/02/09 18:03:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on trans-mbp-3:54189 (size: 5.8 KiB, free: 434.3 MiB)
+23/02/09 18:03:35 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1513
+23/02/09 18:03:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[12] at head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84) (first 15 tasks are for partitions Vector(0))
+23/02/09 18:03:35 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/02/09 18:03:35 INFO BlockManagerInfo: Removed broadcast_0_piece0 on trans-mbp-3:54189 in memory (size: 34.4 KiB, free: 434.4 MiB)
+23/02/09 18:03:35 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (trans-mbp-3, executor driver, partition 0, PROCESS_LOCAL, 5037 bytes) taskResourceAssignments Map()
+23/02/09 18:03:35 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/02/09 18:03:35 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_2.csv, range: 0-181523, partition values: [empty row]
+23/02/09 18:03:35 INFO CodeGenerator: Code generated in 8.403674 ms
+23/02/09 18:03:35 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1514 bytes result sent to driver
+23/02/09 18:03:35 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 41 ms on trans-mbp-3 (executor driver) (1/1)
+23/02/09 18:03:35 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/02/09 18:03:35 INFO DAGScheduler: ResultStage 1 (head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84) finished in 0.073 s
+23/02/09 18:03:35 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/02/09 18:03:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/02/09 18:03:35 INFO DAGScheduler: Job 1 finished: head at /Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/module/transformer.py:84, took 0.077840 s
+23/02/09 18:03:35 INFO FileSourceStrategy: Pushed Filters: 
+23/02/09 18:03:35 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(trim(name#17, None)),NOT (trim(name#17, None) = )
+23/02/09 18:03:35 INFO FileSourceStrategy: Output Data Schema: struct<name: string, email: string, date_of_birth: string, mobile_no: string ... 2 more fields>
+23/02/09 18:03:36 INFO BlockManagerInfo: Removed broadcast_4_piece0 on trans-mbp-3:54189 in memory (size: 5.8 KiB, free: 434.4 MiB)
+23/02/09 18:03:36 INFO ParquetFileFormat: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:36 WARN ParquetOutputFormat: Setting parquet.enable.summary-metadata is deprecated, please use parquet.summary.metadata.level
+23/02/09 18:03:36 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:36 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:36 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:36 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:36 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:36 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 14.398726 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 19.728084 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 7.784021 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 8.53293 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 8.786639 ms
+23/02/09 18:03:36 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 200.0 KiB, free 434.0 MiB)
+23/02/09 18:03:36 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 433.9 MiB)
+23/02/09 18:03:36 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on trans-mbp-3:54189 (size: 34.3 KiB, free: 434.3 MiB)
+23/02/09 18:03:36 INFO SparkContext: Created broadcast 5 from parquet at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:36 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/02/09 18:03:36 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:36 INFO DAGScheduler: Got job 2 (parquet at NativeMethodAccessorImpl.java:0) with 2 output partitions
+23/02/09 18:03:36 INFO DAGScheduler: Final stage: ResultStage 2 (parquet at NativeMethodAccessorImpl.java:0)
+23/02/09 18:03:36 INFO DAGScheduler: Parents of final stage: List()
+23/02/09 18:03:36 INFO DAGScheduler: Missing parents: List()
+23/02/09 18:03:36 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[28] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/02/09 18:03:36 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 260.6 KiB, free 433.7 MiB)
+23/02/09 18:03:36 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 93.5 KiB, free 433.6 MiB)
+23/02/09 18:03:36 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on trans-mbp-3:54189 (size: 93.5 KiB, free: 434.2 MiB)
+23/02/09 18:03:36 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1513
+23/02/09 18:03:36 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 2 (MapPartitionsRDD[28] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+23/02/09 18:03:36 INFO TaskSchedulerImpl: Adding task set 2.0 with 2 tasks resource profile 0
+23/02/09 18:03:36 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (trans-mbp-3, executor driver, partition 0, PROCESS_LOCAL, 5037 bytes) taskResourceAssignments Map()
+23/02/09 18:03:36 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 3) (trans-mbp-3, executor driver, partition 1, PROCESS_LOCAL, 5037 bytes) taskResourceAssignments Map()
+23/02/09 18:03:36 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+23/02/09 18:03:36 INFO Executor: Running task 1.0 in stage 2.0 (TID 3)
+23/02/09 18:03:36 INFO BlockManagerInfo: Removed broadcast_3_piece0 on trans-mbp-3:54189 in memory (size: 34.3 KiB, free: 434.3 MiB)
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 7.760508 ms
+[Stage 2:>                                                          (0 + 2) / 2]23/02/09 18:03:36 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_2.csv, range: 0-181523, partition values: [empty row]
+23/02/09 18:03:36 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_1.csv, range: 0-121081, partition values: [empty row]
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 11.61828 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 9.46858 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 11.550076 ms
+23/02/09 18:03:36 INFO CodeGenerator: Code generated in 9.902566 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 18.86639 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 8.656044 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 11.07368 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 9.020706 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 7.840755 ms
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 706, boot = 430, init = 106, finish = 170
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 312, boot = 12, init = 278, finish = 22
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 782, boot = 425, init = 111, finish = 246
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 374, boot = 5, init = 335, finish = 34
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 323, boot = 5, init = 295, finish = 23
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 384, boot = 12, init = 350, finish = 22
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 413, boot = 4, init = 407, finish = 2
+23/02/09 18:03:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:37 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:37 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:37 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:37 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:37 INFO PythonUDFRunner: Times: total = 428, boot = 9, init = 415, finish = 4
+23/02/09 18:03:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:37 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:37 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:37 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:37 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 9.172323 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 4.054765 ms
+23/02/09 18:03:37 INFO CodeGenerator: Code generated in 15.090049 ms
+23/02/09 18:03:37 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:37 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:37 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:37 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:37 INFO ParquetOutputFormat: Parquet block size to 134217728
+23/02/09 18:03:37 INFO ParquetOutputFormat: Parquet block size to 134217728
+23/02/09 18:03:37 INFO ParquetOutputFormat: Validation is off
+23/02/09 18:03:37 INFO ParquetOutputFormat: Validation is off
+23/02/09 18:03:37 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+23/02/09 18:03:37 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+23/02/09 18:03:37 INFO ParquetOutputFormat: Parquet properties are:
+Parquet page size to 1048576
+Parquet dictionary page size to 1048576
+Dictionary is true
+Writer version is: PARQUET_1_0
+Page size checking is: estimated
+Min row count for page size check is: 100
+Max row count for page size check is: 10000
+Truncate length for column indexes is: 64
+Truncate length for statistics min/max  is: 2147483647
+Bloom filter enabled: false
+Max Bloom filter size for a column is 1048576
+Bloom filter expected number of distinct values are: null
+Page row count limit to 20000
+Writing page checksums is: on
+23/02/09 18:03:37 INFO ParquetOutputFormat: Parquet properties are:
+Parquet page size to 1048576
+Parquet dictionary page size to 1048576
+Dictionary is true
+Writer version is: PARQUET_1_0
+Page size checking is: estimated
+Min row count for page size check is: 100
+Max row count for page size check is: 10000
+Truncate length for column indexes is: 64
+Truncate length for statistics min/max  is: 2147483647
+Bloom filter enabled: false
+Max Bloom filter size for a column is 1048576
+Bloom filter expected number of distinct values are: null
+Page row count limit to 20000
+Writing page checksums is: on
+23/02/09 18:03:37 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "first_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "last_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "email",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "mobile_no",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "date_of_birth",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "over_18",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "membership_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary name (STRING);
+  optional binary first_name (STRING);
+  optional binary last_name (STRING);
+  optional binary email (STRING);
+  optional int32 mobile_no;
+  optional binary date_of_birth (STRING);
+  optional boolean over_18;
+  optional binary membership_id (STRING);
+}
+
+       
+23/02/09 18:03:37 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "first_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "last_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "email",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "mobile_no",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "date_of_birth",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "over_18",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "membership_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary name (STRING);
+  optional binary first_name (STRING);
+  optional binary last_name (STRING);
+  optional binary email (STRING);
+  optional int32 mobile_no;
+  optional binary date_of_birth (STRING);
+  optional boolean over_18;
+  optional binary membership_id (STRING);
+}
+
+       
+23/02/09 18:03:37 INFO CodecPool: Got brand-new compressor [.snappy]
+23/02/09 18:03:37 INFO CodecPool: Got brand-new compressor [.snappy]
+23/02/09 18:03:38 INFO FileOutputCommitter: Saved output of task 'attempt_202302091803363456651475751656325_0002_m_000001_3' to file:/Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/output/succeed/.spark-staging-b3478471-100e-44c6-afe7-8b4c3bfcfe91/_temporary/0/task_202302091803363456651475751656325_0002_m_000001
+23/02/09 18:03:38 INFO FileOutputCommitter: Saved output of task 'attempt_202302091803366066268249035233588_0002_m_000000_2' to file:/Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/output/succeed/.spark-staging-b3478471-100e-44c6-afe7-8b4c3bfcfe91/_temporary/0/task_202302091803366066268249035233588_0002_m_000000
+23/02/09 18:03:38 INFO SparkHadoopMapRedUtil: attempt_202302091803363456651475751656325_0002_m_000001_3: Committed. Elapsed time: 4 ms.
+23/02/09 18:03:38 INFO SparkHadoopMapRedUtil: attempt_202302091803366066268249035233588_0002_m_000000_2: Committed. Elapsed time: 4 ms.
+23/02/09 18:03:38 INFO Executor: Finished task 1.0 in stage 2.0 (TID 3). 4074 bytes result sent to driver
+23/02/09 18:03:38 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 4074 bytes result sent to driver
+23/02/09 18:03:38 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 3) in 1776 ms on trans-mbp-3 (executor driver) (1/2)
+23/02/09 18:03:38 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 1777 ms on trans-mbp-3 (executor driver) (2/2)
+23/02/09 18:03:38 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+23/02/09 18:03:38 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 54191
+23/02/09 18:03:38 INFO DAGScheduler: ResultStage 2 (parquet at NativeMethodAccessorImpl.java:0) finished in 1.829 s
+23/02/09 18:03:38 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+23/02/09 18:03:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+23/02/09 18:03:38 INFO DAGScheduler: Job 2 finished: parquet at NativeMethodAccessorImpl.java:0, took 1.833216 s
+                                                                                23/02/09 18:03:38 INFO FileFormatWriter: Start to commit write Job 94774d3a-f6b7-4aeb-86c2-4e21fef25d8e.
+23/02/09 18:03:38 WARN ParquetOutputFormat: Setting parquet.enable.summary-metadata is deprecated, please use parquet.summary.metadata.level
+23/02/09 18:03:38 INFO FileFormatWriter: Write Job 94774d3a-f6b7-4aeb-86c2-4e21fef25d8e committed. Elapsed time: 7 ms.
+23/02/09 18:03:38 INFO FileFormatWriter: Finished processing stats for write job 94774d3a-f6b7-4aeb-86c2-4e21fef25d8e.
+23/02/09 18:03:38 INFO FileSourceStrategy: Pushed Filters: 
+23/02/09 18:03:38 INFO FileSourceStrategy: Post-Scan Filters: 
+23/02/09 18:03:38 INFO FileSourceStrategy: Output Data Schema: struct<name: string, email: string, date_of_birth: string, mobile_no: string ... 2 more fields>
+23/02/09 18:03:38 INFO ParquetFileFormat: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:38 WARN ParquetOutputFormat: Setting parquet.enable.summary-metadata is deprecated, please use parquet.summary.metadata.level
+23/02/09 18:03:38 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:38 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:38 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:38 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:38 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:38 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:38 INFO CodeGenerator: Code generated in 7.430137 ms
+23/02/09 18:03:38 INFO CodeGenerator: Code generated in 11.762509 ms
+23/02/09 18:03:38 INFO CodeGenerator: Code generated in 5.466598 ms
+23/02/09 18:03:38 INFO CodeGenerator: Code generated in 7.671937 ms
+23/02/09 18:03:38 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 200.0 KiB, free 433.6 MiB)
+23/02/09 18:03:38 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 433.6 MiB)
+23/02/09 18:03:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on trans-mbp-3:54189 (size: 34.3 KiB, free: 434.2 MiB)
+23/02/09 18:03:38 INFO SparkContext: Created broadcast 7 from parquet at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:38 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/02/09 18:03:38 INFO BlockManagerInfo: Removed broadcast_6_piece0 on trans-mbp-3:54189 in memory (size: 93.5 KiB, free: 434.3 MiB)
+23/02/09 18:03:38 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:38 INFO DAGScheduler: Got job 3 (parquet at NativeMethodAccessorImpl.java:0) with 2 output partitions
+23/02/09 18:03:38 INFO DAGScheduler: Final stage: ResultStage 3 (parquet at NativeMethodAccessorImpl.java:0)
+23/02/09 18:03:38 INFO DAGScheduler: Parents of final stage: List()
+23/02/09 18:03:38 INFO DAGScheduler: Missing parents: List()
+23/02/09 18:03:38 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[43] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/02/09 18:03:38 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 258.9 KiB, free 433.7 MiB)
+23/02/09 18:03:38 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 93.6 KiB, free 433.6 MiB)
+23/02/09 18:03:38 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on trans-mbp-3:54189 (size: 93.6 KiB, free: 434.2 MiB)
+23/02/09 18:03:38 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1513
+23/02/09 18:03:38 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 3 (MapPartitionsRDD[43] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+23/02/09 18:03:38 INFO TaskSchedulerImpl: Adding task set 3.0 with 2 tasks resource profile 0
+23/02/09 18:03:38 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 4) (trans-mbp-3, executor driver, partition 0, PROCESS_LOCAL, 5037 bytes) taskResourceAssignments Map()
+23/02/09 18:03:38 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 5) (trans-mbp-3, executor driver, partition 1, PROCESS_LOCAL, 5037 bytes) taskResourceAssignments Map()
+23/02/09 18:03:38 INFO Executor: Running task 1.0 in stage 3.0 (TID 5)
+23/02/09 18:03:38 INFO Executor: Running task 0.0 in stage 3.0 (TID 4)
+23/02/09 18:03:38 INFO BlockManagerInfo: Removed broadcast_5_piece0 on trans-mbp-3:54189 in memory (size: 34.3 KiB, free: 434.3 MiB)
+23/02/09 18:03:38 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_1.csv, range: 0-121081, partition values: [empty row]
+23/02/09 18:03:38 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_2.csv, range: 0-181523, partition values: [empty row]
+23/02/09 18:03:38 INFO PythonUDFRunner: Times: total = 174, boot = -1317, init = 1342, finish = 149
+23/02/09 18:03:38 INFO PythonUDFRunner: Times: total = 239, boot = -1233, init = 1258, finish = 214
+23/02/09 18:03:38 INFO PythonUDFRunner: Times: total = 232, boot = -1179, init = 1355, finish = 56
+23/02/09 18:03:38 INFO PythonUDFRunner: Times: total = 302, boot = -1140, init = 1375, finish = 67
+23/02/09 18:03:38 INFO PythonUDFRunner: Times: total = 332, boot = -1247, init = 1492, finish = 87
+23/02/09 18:03:38 INFO PythonUDFRunner: Times: total = 329, boot = -1072, init = 1395, finish = 6
+23/02/09 18:03:38 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:38 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:38 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:38 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:38 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:38 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:38 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:38 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:38 INFO ParquetOutputFormat: Parquet block size to 134217728
+23/02/09 18:03:38 INFO ParquetOutputFormat: Validation is off
+23/02/09 18:03:38 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+23/02/09 18:03:38 INFO ParquetOutputFormat: Parquet properties are:
+Parquet page size to 1048576
+Parquet dictionary page size to 1048576
+Dictionary is true
+Writer version is: PARQUET_1_0
+Page size checking is: estimated
+Min row count for page size check is: 100
+Max row count for page size check is: 10000
+Truncate length for column indexes is: 64
+Truncate length for statistics min/max  is: 2147483647
+Bloom filter enabled: false
+Max Bloom filter size for a column is 1048576
+Bloom filter expected number of distinct values are: null
+Page row count limit to 20000
+Writing page checksums is: on
+23/02/09 18:03:38 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "first_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "last_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "email",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "mobile_no",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "date_of_birth",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "over_18",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "membership_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary name (STRING);
+  optional binary first_name (STRING);
+  optional binary last_name (STRING);
+  optional binary email (STRING);
+  optional int32 mobile_no;
+  optional binary date_of_birth (STRING);
+  optional boolean over_18;
+  optional binary membership_id (STRING);
+}
+
+       
+23/02/09 18:03:38 INFO FileOutputCommitter: Saved output of task 'attempt_202302091803382159863736368012916_0003_m_000001_5' to file:/Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/output/failed/.spark-staging-c571ab1f-e9b6-4744-abd3-9651df162892/_temporary/0/task_202302091803382159863736368012916_0003_m_000001
+23/02/09 18:03:38 INFO SparkHadoopMapRedUtil: attempt_202302091803382159863736368012916_0003_m_000001_5: Committed. Elapsed time: 1 ms.
+23/02/09 18:03:38 INFO Executor: Finished task 1.0 in stage 3.0 (TID 5). 3919 bytes result sent to driver
+23/02/09 18:03:38 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 5) in 494 ms on trans-mbp-3 (executor driver) (1/2)
+23/02/09 18:03:39 INFO PythonUDFRunner: Times: total = 452, boot = -1198, init = 1529, finish = 121
+23/02/09 18:03:39 INFO PythonUDFRunner: Times: total = 486, boot = -1057, init = 1533, finish = 10
+23/02/09 18:03:39 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:39 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:39 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:39 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:39 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:39 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+23/02/09 18:03:39 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:39 INFO CodecConfig: Compression: SNAPPY
+23/02/09 18:03:39 INFO ParquetOutputFormat: Parquet block size to 134217728
+23/02/09 18:03:39 INFO ParquetOutputFormat: Validation is off
+23/02/09 18:03:39 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+23/02/09 18:03:39 INFO ParquetOutputFormat: Parquet properties are:
+Parquet page size to 1048576
+Parquet dictionary page size to 1048576
+Dictionary is true
+Writer version is: PARQUET_1_0
+Page size checking is: estimated
+Min row count for page size check is: 100
+Max row count for page size check is: 10000
+Truncate length for column indexes is: 64
+Truncate length for statistics min/max  is: 2147483647
+Bloom filter enabled: false
+Max Bloom filter size for a column is 1048576
+Bloom filter expected number of distinct values are: null
+Page row count limit to 20000
+Writing page checksums is: on
+23/02/09 18:03:39 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "first_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "last_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "email",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "mobile_no",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "date_of_birth",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "over_18",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "membership_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary name (STRING);
+  optional binary first_name (STRING);
+  optional binary last_name (STRING);
+  optional binary email (STRING);
+  optional int32 mobile_no;
+  optional binary date_of_birth (STRING);
+  optional boolean over_18;
+  optional binary membership_id (STRING);
+}
+
+       
+[Stage 3:=============================>                             (1 + 1) / 2]23/02/09 18:03:39 INFO FileOutputCommitter: Saved output of task 'attempt_202302091803381129015199576284274_0003_m_000000_4' to file:/Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/output/failed/.spark-staging-c571ab1f-e9b6-4744-abd3-9651df162892/_temporary/0/task_202302091803381129015199576284274_0003_m_000000
+23/02/09 18:03:39 INFO SparkHadoopMapRedUtil: attempt_202302091803381129015199576284274_0003_m_000000_4: Committed. Elapsed time: 1 ms.
+23/02/09 18:03:39 INFO Executor: Finished task 0.0 in stage 3.0 (TID 4). 3919 bytes result sent to driver
+23/02/09 18:03:39 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 4) in 640 ms on trans-mbp-3 (executor driver) (2/2)
+23/02/09 18:03:39 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+23/02/09 18:03:39 INFO DAGScheduler: ResultStage 3 (parquet at NativeMethodAccessorImpl.java:0) finished in 0.690 s
+23/02/09 18:03:39 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+23/02/09 18:03:39 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+23/02/09 18:03:39 INFO DAGScheduler: Job 3 finished: parquet at NativeMethodAccessorImpl.java:0, took 0.694461 s
+                                                                                23/02/09 18:03:39 INFO FileFormatWriter: Start to commit write Job 13c8a996-3ead-4a86-958f-575ca1ff2fe2.
+23/02/09 18:03:39 WARN ParquetOutputFormat: Setting parquet.enable.summary-metadata is deprecated, please use parquet.summary.metadata.level
+23/02/09 18:03:39 INFO FileFormatWriter: Write Job 13c8a996-3ead-4a86-958f-575ca1ff2fe2 committed. Elapsed time: 10 ms.
+23/02/09 18:03:39 INFO FileFormatWriter: Finished processing stats for write job 13c8a996-3ead-4a86-958f-575ca1ff2fe2.
+23/02/09 18:03:39 INFO FileSourceStrategy: Pushed Filters: 
+23/02/09 18:03:39 INFO FileSourceStrategy: Post-Scan Filters: 
+23/02/09 18:03:39 INFO FileSourceStrategy: Output Data Schema: struct<name: string, email: string, date_of_birth: string, mobile_no: string ... 2 more fields>
+23/02/09 18:03:39 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:39 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:39 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/02/09 18:03:39 INFO CodeGenerator: Code generated in 33.771791 ms
+23/02/09 18:03:39 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 200.0 KiB, free 433.6 MiB)
+23/02/09 18:03:39 INFO BlockManagerInfo: Removed broadcast_8_piece0 on trans-mbp-3:54189 in memory (size: 93.6 KiB, free: 434.4 MiB)
+23/02/09 18:03:39 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 433.9 MiB)
+23/02/09 18:03:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on trans-mbp-3:54189 (size: 34.3 KiB, free: 434.3 MiB)
+23/02/09 18:03:39 INFO SparkContext: Created broadcast 9 from csv at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:39 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/02/09 18:03:39 INFO DAGScheduler: Registering RDD 49 (csv at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+23/02/09 18:03:39 INFO DAGScheduler: Got map stage job 4 (csv at NativeMethodAccessorImpl.java:0) with 2 output partitions
+23/02/09 18:03:39 INFO DAGScheduler: Final stage: ShuffleMapStage 4 (csv at NativeMethodAccessorImpl.java:0)
+23/02/09 18:03:39 INFO DAGScheduler: Parents of final stage: List()
+23/02/09 18:03:39 INFO DAGScheduler: Missing parents: List()
+23/02/09 18:03:39 INFO DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[49] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/02/09 18:03:39 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 65.8 KiB, free 433.9 MiB)
+23/02/09 18:03:39 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 27.2 KiB, free 433.9 MiB)
+23/02/09 18:03:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on trans-mbp-3:54189 (size: 27.2 KiB, free: 434.3 MiB)
+23/02/09 18:03:39 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1513
+23/02/09 18:03:39 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[49] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+23/02/09 18:03:39 INFO TaskSchedulerImpl: Adding task set 4.0 with 2 tasks resource profile 0
+23/02/09 18:03:39 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 6) (trans-mbp-3, executor driver, partition 0, PROCESS_LOCAL, 5026 bytes) taskResourceAssignments Map()
+23/02/09 18:03:39 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 7) (trans-mbp-3, executor driver, partition 1, PROCESS_LOCAL, 5026 bytes) taskResourceAssignments Map()
+23/02/09 18:03:39 INFO Executor: Running task 1.0 in stage 4.0 (TID 7)
+23/02/09 18:03:39 INFO Executor: Running task 0.0 in stage 4.0 (TID 6)
+23/02/09 18:03:39 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_2.csv, range: 0-181523, partition values: [empty row]
+23/02/09 18:03:39 INFO FileScanRDD: Reading File path: file:///Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/data/applications_dataset_1.csv, range: 0-121081, partition values: [empty row]
+23/02/09 18:03:39 INFO CodeGenerator: Code generated in 7.795267 ms
+23/02/09 18:03:39 INFO CodeGenerator: Code generated in 7.36601 ms
+23/02/09 18:03:39 INFO CodeGenerator: Code generated in 11.121123 ms
+23/02/09 18:03:39 INFO PythonUDFRunner: Times: total = 195, boot = -750, init = 776, finish = 169
+23/02/09 18:03:39 INFO Executor: Finished task 1.0 in stage 4.0 (TID 7). 3203 bytes result sent to driver
+23/02/09 18:03:39 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 7) in 268 ms on trans-mbp-3 (executor driver) (1/2)
+23/02/09 18:03:39 INFO PythonUDFRunner: Times: total = 271, boot = -815, init = 844, finish = 242
+23/02/09 18:03:39 INFO Executor: Finished task 0.0 in stage 4.0 (TID 6). 3203 bytes result sent to driver
+23/02/09 18:03:39 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 6) in 312 ms on trans-mbp-3 (executor driver) (2/2)
+23/02/09 18:03:39 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+23/02/09 18:03:39 INFO DAGScheduler: ShuffleMapStage 4 (csv at NativeMethodAccessorImpl.java:0) finished in 0.328 s
+23/02/09 18:03:39 INFO DAGScheduler: looking for newly runnable stages
+23/02/09 18:03:39 INFO DAGScheduler: running: Set()
+23/02/09 18:03:39 INFO DAGScheduler: waiting: Set()
+23/02/09 18:03:39 INFO DAGScheduler: failed: Set()
+23/02/09 18:03:39 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+23/02/09 18:03:39 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+23/02/09 18:03:39 INFO CodeGenerator: Code generated in 14.99179 ms
+23/02/09 18:03:39 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+23/02/09 18:03:39 INFO DAGScheduler: Got job 5 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/02/09 18:03:39 INFO DAGScheduler: Final stage: ResultStage 6 (csv at NativeMethodAccessorImpl.java:0)
+23/02/09 18:03:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 5)
+23/02/09 18:03:39 INFO DAGScheduler: Missing parents: List()
+23/02/09 18:03:39 INFO DAGScheduler: Submitting ResultStage 6 (CoalescedRDD[52] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/02/09 18:03:39 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 269.4 KiB, free 433.6 MiB)
+23/02/09 18:03:39 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 98.6 KiB, free 433.5 MiB)
+23/02/09 18:03:39 INFO BlockManagerInfo: Removed broadcast_10_piece0 on trans-mbp-3:54189 in memory (size: 27.2 KiB, free: 434.3 MiB)
+23/02/09 18:03:39 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on trans-mbp-3:54189 (size: 98.6 KiB, free: 434.2 MiB)
+23/02/09 18:03:39 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1513
+23/02/09 18:03:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (CoalescedRDD[52] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/02/09 18:03:39 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+23/02/09 18:03:39 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 8) (trans-mbp-3, executor driver, partition 0, NODE_LOCAL, 4729 bytes) taskResourceAssignments Map()
+23/02/09 18:03:39 INFO Executor: Running task 0.0 in stage 6.0 (TID 8)
+23/02/09 18:03:39 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/09 18:03:39 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/09 18:03:39 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/02/09 18:03:40 INFO ShuffleBlockFetcherIterator: Getting 2 (212.0 B) non-empty blocks including 2 (212.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/02/09 18:03:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+23/02/09 18:03:40 INFO FileOutputCommitter: Saved output of task 'attempt_202302091803397849518271009713362_0006_m_000000_8' to file:/Users/txuantu/Documents/Projects/Interview_2023/GovTech/01_Tech_Assignment/Senior-DE-Tech-Challenge-Solution/01_Data_pipelines/output/stats/_temporary/0/task_202302091803397849518271009713362_0006_m_000000
+23/02/09 18:03:40 INFO SparkHadoopMapRedUtil: attempt_202302091803397849518271009713362_0006_m_000000_8: Committed. Elapsed time: 0 ms.
+23/02/09 18:03:40 INFO Executor: Finished task 0.0 in stage 6.0 (TID 8). 5159 bytes result sent to driver
+23/02/09 18:03:40 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 8) in 109 ms on trans-mbp-3 (executor driver) (1/1)
+23/02/09 18:03:40 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+23/02/09 18:03:40 INFO DAGScheduler: ResultStage 6 (csv at NativeMethodAccessorImpl.java:0) finished in 0.153 s
+23/02/09 18:03:40 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+23/02/09 18:03:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+23/02/09 18:03:40 INFO DAGScheduler: Job 5 finished: csv at NativeMethodAccessorImpl.java:0, took 0.156726 s
+23/02/09 18:03:40 INFO FileFormatWriter: Start to commit write Job 18b23c41-f1d9-47f9-8bb2-fe85ee0c7fd5.
+23/02/09 18:03:40 INFO FileFormatWriter: Write Job 18b23c41-f1d9-47f9-8bb2-fe85ee0c7fd5 committed. Elapsed time: 2 ms.
+23/02/09 18:03:40 INFO FileFormatWriter: Finished processing stats for write job 18b23c41-f1d9-47f9-8bb2-fe85ee0c7fd5.
+23/02/09 18:03:40 INFO SparkContext: Invoking stop() from shutdown hook
+23/02/09 18:03:40 INFO SparkUI: Stopped Spark web UI at http://trans-mbp-3:4041
+23/02/09 18:03:40 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/02/09 18:03:40 INFO MemoryStore: MemoryStore cleared
+23/02/09 18:03:40 INFO BlockManager: BlockManager stopped
+23/02/09 18:03:40 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/02/09 18:03:40 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/02/09 18:03:40 INFO SparkContext: Successfully stopped SparkContext
+23/02/09 18:03:40 INFO ShutdownHookManager: Shutdown hook called
+23/02/09 18:03:40 INFO ShutdownHookManager: Deleting directory /private/var/folders/n_/lcxrykjd0l1g8sf4xlt2vx980000gn/T/spark-e77f0a40-2de7-4430-8c82-921a4e19c2a9/pyspark-c4794fda-8b3f-4d3f-862b-724071be4512
+23/02/09 18:03:40 INFO ShutdownHookManager: Deleting directory /private/var/folders/n_/lcxrykjd0l1g8sf4xlt2vx980000gn/T/spark-e77f0a40-2de7-4430-8c82-921a4e19c2a9
+23/02/09 18:03:40 INFO ShutdownHookManager: Deleting directory /private/var/folders/n_/lcxrykjd0l1g8sf4xlt2vx980000gn/T/spark-de40e26c-7ba0-4d29-b6b3-dd78db3442d4

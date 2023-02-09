@@ -3,4 +3,4 @@ venv:
 run_unit_test:
 	source venv/bin/activate && cd test && pytest
 run_local:
-	./venv/bin/python main.py --input data --output output --stats True >> run.log 2>&1
+	./venv/bin/python main.py --input data --output output --stats True >> run_log.txt 2>&1
