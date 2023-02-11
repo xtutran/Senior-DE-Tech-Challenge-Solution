@@ -22,3 +22,6 @@ This database will be used by several teams within the company to track the orde
 We will have to create one account for each team with following access permission at table level:
 
 ![alt text](access_control.png)
+
+This is just very simple strategy for the requirement. For the real case scenario, we will need more than this, for example: will need a well-defined access control permission and data classification to allow particular team to have sufficient access to data at column level.
+Customer sensitive data will need to be encrypted / anonymize or masked for any data analytics purpose. Strictly follow PII and PDPA 
