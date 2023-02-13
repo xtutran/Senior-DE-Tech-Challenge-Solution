@@ -10,9 +10,6 @@ from datetime import datetime
 from hashlib import sha256
 from typing import Optional
 
-from dateutil.relativedelta import relativedelta
-
-
 def clean_mobile_number(mobile: str) -> Optional[int]:
     """
     This function to clean / normalize mobile number
@@ -104,8 +101,9 @@ def is_valid_mobile_number(mobile: int) -> bool:
 def is_over_18(date_of_birth: datetime) -> bool:
     """
     Check if applicant is over 18 years old as of 1 Jan 2022
+
     :param date_of_birth: datetime
     :return True or False:
     """
-    age = relativedelta(dt1=datetime(2022, 1, 1), dt2=date_of_birth).years
+    age = 2022 - date_of_birth.year - ((1, 1) < (date_of_birth.month, date_of_birth.day))
     return age > 18
