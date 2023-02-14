@@ -41,3 +41,8 @@ def test_split_fullname():
     assert helper.split_fullname("Mr. Scott Martinez PhD") == ["Scott", "Martinez"]
     assert helper.split_fullname("Scott Martinez PhD") == ["Scott", "Martinez"]
     assert helper.split_fullname("Mr. Scott") == ["Scott", None]
+
+
+def test_is_over_18():
+    assert not helper.is_over_18(datetime(2018, 1, 1))
+    assert helper.is_over_18(datetime(1988, 1, 1))

@@ -1,5 +1,5 @@
 venv:
-	/usr/local/anaconda3/bin/python -m venv venv && source venv/bin/activate && pip install -r requirements.txt
+	python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
 run_unit_test:
 	source venv/bin/activate && cd test && pytest
 run_local:
